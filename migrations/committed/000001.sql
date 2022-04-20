@@ -1,3 +1,6 @@
+--! Previous: -
+--! Hash: sha1:8d7210d66b5870a90977f3978a380eca3ad91240
+
 drop table if exists edge_purchases_customers;
 drop table if exists edge_coffee_types_purchases;
 

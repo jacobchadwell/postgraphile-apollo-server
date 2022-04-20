@@ -41,7 +41,7 @@ async function main() {
     pgPool,
     'public', // PostgreSQL schema to use
     {
-      postgraphileOptions
+      ...postgraphileOptions
     }
   );
 

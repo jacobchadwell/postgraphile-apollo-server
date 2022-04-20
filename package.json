@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "migrate": "graphile-migrate migrate",
-    "graphile-init": "graphile-migrate init"
+    "graphile-init": "graphile-migrate init",
+    "graphile-reset": "graphile-migrate reset --erase",
+    "graphile-commit": "graphile-migrate commit"
   },
   "repository": {
     "type": "git",
