@@ -2,10 +2,10 @@
   "name": "postgraphile-apollo-server",
   "version": "1.0.0",
   "description": "Testing a Postgraphile implementation with Apollo Server",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node src/index.js",
     "db-migrate": "graphile-migrate migrate",
     "db-init": "graphile-migrate init",
     "db-commit": "graphile-migrate commit"
