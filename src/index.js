@@ -5,7 +5,10 @@ const pgSimplifyInflectorPlugin = require("@graphile-contrib/pg-simplify-inflect
 const pgManyToManyPlugin = require("@graphile-contrib/pg-many-to-many");
 const pgConnectionFilterPlugin = require("postgraphile-plugin-connection-filter");
 const makeWrapResolversPlugin = require("graphile-utils");
+const coffeeResolver = require("./plugins/coffeeResolver");
 const { wrapSchema, FilterTypes } = require("@graphql-tools/wrap");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const pgPool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
@@ -24,7 +27,7 @@ const postgraphileOptions = {
     pgSimplifyInflectorPlugin,
     pgManyToManyPlugin,
     pgConnectionFilterPlugin,
-    makeWrapResolversPlugin
+    coffeeResolver
   ],
   exportGqlSchemaPath: "schema.graphql",
   graphiql: true,
