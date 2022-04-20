@@ -6,10 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "migrate": "graphile-migrate migrate",
-    "graphile-init": "graphile-migrate init",
-    "graphile-reset": "graphile-migrate reset --erase",
-    "graphile-commit": "graphile-migrate commit"
+    "db-migrate": "graphile-migrate migrate",
+    "db-init": "graphile-migrate init",
+    "db-commit": "graphile-migrate commit"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
     "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
     "@graphql-tools/wrap": "^8.4.15",
     "apollo-server": "^3.6.7",
+    "graphile-utils": "^4.12.2",
     "pg": "^8.7.3",
     "postgraphile": "^4.12.9",
     "postgraphile-apollo-server": "^0.1.1",
